@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Services";
+}
+<div class="welcome-message">
+    @Html.Raw(ViewData["html"])
+</div>
+
+<div class="movie-input">
+    <div class="search-input-container">
+        <input type="text" name="search-input" placeholder="Enter the name of movie" id="search-movie-input" width="900"/>
+    </div>
+    <div >
+        <button class="btn btn-lg search-movie-button">Search</button>
+    </div>
+</div>
+
+
+<div class="text-center movies-container" id="services-sample-movies">
+   
+</div>
+
+<script defer src="~/Scripts/Services.js"></script>

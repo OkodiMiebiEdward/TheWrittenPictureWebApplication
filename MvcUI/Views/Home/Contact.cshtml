@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+}
+
+<h1 class="title">@ViewBag.Title</h1>
+<div class="row contact-section">
+    <div class="col-md-6 contact-image-section" >
+        <img src="~/Pictures/customercares.jpg" alt="customer care" />
+    </div>
+    <div class="col-md-6">
+            <form action="/" id="form">
+                <p class="lead text-center">
+                    We're here to help and answer any question you might have. We look forward to hearing
+                    from you.
+                </p>
+                <h2>Fill this form to contact us</h2>
+               
+                <div class="input-control">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="firstname" />
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="Lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" />
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                    <div class="error"></div>
+                </div>
+
+                
+               <button type="submit" id="submitBtn" class="btn btn-lg">Send Mail</button>
+               
+
+            </form>
+    </div>
+</div>
+
+
+<div class="row contactUs">
+    <div class="col-md-4 col-md-offset-2 contact-phone-section">
+        <div class="phone-section">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h5>Talk to someone</h5>
+        </div>
+        <p class="text-center">Interested in getting in touch? just pick up the phone to chat with a member of our team.</p> <br />
+        <span class="contact-phone">+2347062534713</span>
+    </div>
+   
+    <div class="col-md-4 contact-message-section">
+        <div class="message-section">
+            <i class="fas fa-comment"></i>
+            <h5>Send a quick message</h5>
+        </div>
+        <p>Sometimes you need a little help from your friends. You can easily send a quick message. Don't 
+        worry... we're here for you.</p>
+    </div>
+</div>
+
+
+<script defer src="https://smtpjs.com/v3/smtp.js"></script>
+<script defer src="~/Scripts/HomeContact.js"></script>

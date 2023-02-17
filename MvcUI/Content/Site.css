@@ -1,0 +1,264 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.title{
+color:royalblue;
+font-size: 3em;
+}
+
+.header {
+    background-image: url("/Pictures/buyCheapbckPic.jpg");
+    height:500px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.header-info{
+   padding-top:60px;
+   width:400px;
+   padding-left:70px;
+}
+
+.section-info{
+    background-color:black;
+    color:#ffffff;
+    width:100%;
+}
+
+.section-info-text{
+ padding:5px;
+}
+
+.coverImage{
+  height:200px;
+  width:200px;
+}
+
+.mission-statement{
+ font-size:2em;
+}
+
+#form{
+    width: 100%;
+    padding:10px;
+    background-color:whitesmoke;
+    border-radius:4px;
+}
+
+#form h2{
+    color: black;
+    text-align: center;
+}
+
+#form button{
+    padding:10px;
+    margin-top:10px;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    background-color: royalblue;
+    margin-left: 220px;
+}
+
+.input-control{
+    display:flex;
+    flex-direction:column;
+    align-content:start;
+    align-items:center;
+    
+}
+
+.input-control input, .input-control textarea{
+    border:2px solid white;
+    border-radius:4px;
+    display:block;
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+}
+
+.defaultInputBorder{
+    border-color:black;
+}
+
+.input-control input:focus,.input-control textarea:focus{
+    outline:0;
+}
+
+.input-control.success input, .input-control.success textarea{
+    border-color: #09c372;
+}
+
+.input-control.error input,.input-control.error textarea{
+    border-color:#ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size:14px;
+    height:13px;
+}
+
+
+.contact-section img{
+   width:580px;
+   height:522px;
+   border-radius:4px;
+}
+
+.phone-message-section{
+    margin-top:20px;
+    margin-left:50px;
+    color: black;
+}
+
+.phone-section {
+    padding-top:20px;
+}
+
+.message-section{
+    padding-top:40px;
+}
+
+.message-section i {
+    color: white;
+    margin-left: 165px;
+}
+
+.phone-section i{
+    margin-left: 150px;
+    color: black;
+}
+
+.phone-section h5,.message-section h5{
+ text-align:center;
+ color:black;
+}
+
+.contact-phone-section {
+    background-color: whitesmoke;
+    color: royalblue;
+    border-radius: 10px;
+    padding:30px;
+}
+
+.contact-message-section {
+    background-color: royalblue;
+    color: white;
+    margin-left:20px;
+    border-radius: 10px;
+    padding-bottom:60px;
+}
+
+.contactUs{
+    margin-top:30px;
+}
+
+.contact-phone{
+margin-left: 110px;
+color: black;
+}
+
+.Account-title{
+ color:royalblue;
+}
+
+.createBtn{
+ background-color:royalblue;
+ color: white;
+}
+
+.Login-title{
+  color:royalblue;
+}
+
+.loginBtn{
+  color:white;
+  background-color:royalblue;
+}
+
+
+.welcome-message{
+    text-align:end;
+    color:royalblue;
+}
+
+.movie-input{
+ margin-top:30px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ 
+}
+
+.search-input-container{
+
+}
+
+#search-movie-input{
+ margin-right:200px;
+ background-color:black;
+ color: royalblue;
+ padding:5px;
+ border-radius:16px;
+ text-align:center;
+ font-size:20px;
+}
+
+.search-movie-button{
+ margin-left:112px;
+ border-radius:16px;
+ color: royalblue;
+}
+
+.search-movie-button:hover{
+ background-color:royalblue;
+ color:white;
+ border:none;
+}
+
+.movies-container{
+padding:20px;
+ width:100%;
+ height:500px;
+ overflow:auto;
+ margin-top:10px
+}
+
+.movies-container h4{
+ color:royalblue;
+ text-align:center;
+ padding:20px;
+ font-size:2rem;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.movies-container-redesign{
+ width:100%;
+ height:200px;
+}
