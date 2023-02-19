@@ -1,18 +1,22 @@
 ﻿const sampleMovies = document.querySelector('#services-sample-movies');
-const movieQueryBtn = document.querySelector('.search-movie-button');
+const movieQueryInput = document.querySelector('#search-movie-input');
 
 
-movieQueryBtn.addEventListener('click', () => {
+movieQueryInput.addEventListener('blur', () => {
     const moviesToRemove = sampleMovies.querySelectorAll('.remove-description');
     for (const movie of moviesToRemove) {
         movie.remove();
     }
     sampleMovies.classList.add('movies-container-redesign');
+
+    getMoviesFromQuery(movieQueryInput.value);
+    //getMoviesFromQuery();
 });
 
 
+
 async function getAPIkeys() {
-    // Api keys are secured in the Data folder, it will not be added in source control
+    // Api keys are secured in the MvcUI/Data folder, it will not be added in source control
     const response = await fetch("/Data/Keys.json");
     const data = await response.json();
     const arrayFromJson = Object.entries(data);
@@ -20,13 +24,17 @@ async function getAPIkeys() {
     return APIkeys;
 }
 
+
+
+
+
 async function getMoviesFromQuery(query) {
-
-
     const apiKeys = await getAPIkeys();
     let omdbApiKey = apiKeys[1];
     const response = await fetch(`https://www.omdbapi.com/?apikey=${omdbApiKey}&type=movie&s=${query}`);
     const data = await response.json();
+    console.log(movieQueryInput);
+    console.log(data);
     const movieData = data.Search;
 
     for (const movie of movieData) {
@@ -41,7 +49,6 @@ async function getMoviesFromQuery(query) {
     <br/>
     <br/>
     `;
-
         sampleMovies.innerHTML += html;
     }
 }
@@ -52,7 +59,7 @@ window.onload = async function ()
 {
     const apiKeys = await getAPIkeys();
     let omdbApiKey = apiKeys[1];
-    const response = await fetch(`https://www.omdbapi.com/?apikey=${omdbApiKey}&type=movie&s=Merlin`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${omdbApiKey}&type=movie&s=Action`);
     const data = await response.json();
     const movieData = data.Search;
 
