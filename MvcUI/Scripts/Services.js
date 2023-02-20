@@ -2,7 +2,7 @@
 const movieQueryInput = document.querySelector('#search-movie-input');
 
 
-movieQueryInput.addEventListener('blur', () => {
+movieQueryInput.addEventListener('change', () => {
     const moviesToRemove = sampleMovies.querySelectorAll('.remove-description');
     for (const movie of moviesToRemove) {
         movie.remove();
