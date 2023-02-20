@@ -250,3 +250,26 @@ padding:20px;
  width:100%;
  height:500px;
 }
+
+.services-books{
+    margin-top:20px;
+}
+
+.services-header h2
+{
+    color: royalblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header{
+      background-image:none;
+  }
+
+  .header-info{
+    text-align:center;
+  }
+}
