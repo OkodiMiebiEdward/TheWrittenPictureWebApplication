@@ -20,7 +20,7 @@ window.onload = async function () {
     }
     coverImageUrls.splice(0, 6);
     const html = coverImageUrls.map(coverImage => {
-      return  `<div class="col-md-3"><img src=${coverImage} class="coverImage"></img></div>
+      return  `<div class="col-md-3 col-xs-3 col-sm-3"><img src=${coverImage} class="coverImage"></img></div>
         `
     }).join('');
     googleBooks.innerHTML = html;
@@ -36,7 +36,7 @@ window.onload = async function () {
     moviesToDisplay = [shuffledArray[1], shuffledArray[0], shuffledArray[8], shuffledArray[7]];
    
     const html = moviesToDisplay.map(movie => {
-        return `<div class="col-md-3"><img src=${movie.Poster} class="coverImage"></img> <div class="text-center"> <h5>${movie.Title}</h5><h4>${movie.Year}</h4> </div> </div>`
+        return `<div class="col-md-3 col-xs-3 col-sm-3"><img src=${movie.Poster} class="coverImage"></img> <div class="text-center"> <h5>${movie.Title}</h5><h4>${movie.Year}</h4> </div> </div>`
         }).join('');
      OmdbMovies.innerHTML = html;
  }
