@@ -147,12 +147,13 @@ font-size: 3em;
 
 .message-section i {
     color: white;
-    margin-left: 165px;
+    margin-left: 200px;
 }
 
 .phone-section i{
-    margin-left: 150px;
+   
     color: black;
+    margin-left:300px;
 }
 
 .phone-section h5,.message-section h5{
@@ -276,6 +277,7 @@ padding:20px;
    
     .contact-info {
         margin-left:-50px;
+
     }
 
     .phone-section i {
@@ -288,5 +290,68 @@ padding:20px;
 
     .message-section i{
         margin-left:200px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .contact-image-section{
+        text-align:center;
+    }
+
+    .contact-info {
+        margin-left: 50px;
+    }
+
+    .phone-section i {
+        margin-left: 300px;
+    }
+
+    .contact-phone {
+        margin-left: 260px;
+    }
+
+    .message-section i {
+        margin-left: 300px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px)
+{
+    .contact-info {
+        margin-left: 80px;
+    }
+
+    .phone-section i {
+        margin-left: 330px;
+    }
+
+    .contact-phone {
+        margin-left: 280px;
+    }
+
+    .message-section i {
+        margin-left: 330px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+  
+    .phone-section i {
+        margin-left: 150px;
+    }
+
+    .message-section i {
+        margin-left: 150px;
+    }
+
+    .contact-phone {
+        margin-left: 110px;
+    }
+
+    .contact-info {
+        margin-left: -8px;
     }
 }
