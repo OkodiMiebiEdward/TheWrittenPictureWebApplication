@@ -6,21 +6,27 @@ window.onload = async function () {
     const googleBooksApiKey = APIkeys[0];
     const OmdbMovieApiKey = APIkeys[1];
 
-    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=inpublisher:pearson&key=${googleBooksApiKey}`);
+    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=inpublisher:catapult&key=${googleBooksApiKey}`);
+    console.log(response);
     const data = await response.json();
+    console.log(data);
     const books = data.items;
+    //console.log(books);
+    console.log("hello");
   
-
+    
     const coverImageUrls = [];
 
     // Iterate through the list of books and get the cover image URL for each book
     for (var book of books) {
-        const coverImageUrl = book.volumeInfo.imageLinks.thumbnail;
+        console.log(book);
+        const coverImageUrl = book.volumeInfo.imageLinks?.thumbnail;
         coverImageUrls.push(coverImageUrl);
     }
+    
     coverImageUrls.splice(0, 6);
     const html = coverImageUrls.map(coverImage => {
-      return  `<div class="col-md-3 col-xs-3 col-sm-3"><img src=${coverImage} class="coverImage"></img></div>
+       return `<div class="col-md-3 col-xs-3 col-sm-3"><img src=${coverImage} class="coverImage"></img></div>
         `
     }).join('');
     googleBooks.innerHTML = html;
